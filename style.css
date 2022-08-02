@@ -47,6 +47,8 @@
     }
     
 }
+
+
  ----------------------------
 
             /*   MAIN  "INFORMACION"*/
@@ -60,11 +62,26 @@
     grid-column: 1/2;
 }
 
+.stronge {
+    animation: segundo-titulo alternate infinite ease-in 3s 1s;
+}
+@keyframes segundo-titulo {
+    0% {
+        transform: translate(0%);
+        color: aliceblue;
+    }
+    75% {
+        transform: translate(3%);
+        color: blueviolet;
+    }
+} 
+
  .segundo-titulo {
     display: flex;
     justify-content: space-around;
     font-size: 60px;
-    background-color: blue;
+    background: linear-gradient(blue, rgb(80, 99, 161));
+    background-color: red;
 }
 
  .texto-informacion {
@@ -78,7 +95,8 @@
     justify-content: center;
     font-size: x-large;
     margin: 16px;
-    background-color: blue;
+    background-color: white;
+    background: linear-gradient(white, rgb(221, 214, 155));
 }
 
 .inframe {
@@ -87,7 +105,7 @@
 
 @media all and (max-width: 900px) and (min-width:764px){          /* media: tablet */
    .inframe-text {
-    color: wheat;
+    color: black;
     display: grid;
     grid-template-rows: repeat(2, 1fr) ;
    }
@@ -109,7 +127,7 @@
 
 @media all and (max-width: 765px){          /* media: mobile */
     .inframe-text {
-     color: wheat;
+     color: black;
      display: grid;
      grid-template-rows: repeat(2, 1fr) ;
     }
@@ -145,6 +163,7 @@
 .img-personas1 {
     width: 300px;
     margin: 1px auto;
+    animation: img-personas alternate infinite 2s 2s ease;
 }
 
 .img-personas1:hover {
@@ -153,9 +172,41 @@
     border: red 3px solid;
 }
 
-strong {
+@keyframes img-personas {
+    0% {
+        transform: rotate(360deg);
+    }
+    50% {
+     border-color: yellow;   
+    }
+    75% {
+     border-color: orangered;
+    }
+}
+
+.stronge-personas {
     display: flex;
     justify-content: center;
+    animation: stronge-personas alternate ease-in-out infinite 2s 2s;
+}
+
+@keyframes stronge-personas {
+    0% {
+        transform: translate(0%);
+        color: red
+    }
+    25% {
+        transform: translate(20%);
+        color: red
+    }
+    50% {
+        transform: translate(20%, 20%);
+        color: red
+    }
+    75% {
+        transform: translate(0%, 20%);
+        color: red
+    }
 }
 
 .footer-personas {
@@ -209,11 +260,15 @@ strong {
 
 
         /*   MAIN  "DONACIONES"*/
+.body-donaciones {
+    background: linear-gradient(to top,green, lightgreen);
+}
+
 .form-padre {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     text-align: center;
-    background-color: aqua;
+    background: radial-gradient(green, lightgreen);
     margin-top: 100px;
 }
 
@@ -278,6 +333,17 @@ fieldset {
     grid-column: 2/3;
     align-self: center;
     margin: 10px;
+    animation: img-ubi alternate 3s 1s ease;
+    animation-iteration-count: 1;
+}
+
+@keyframes img-ubi {
+    0% {
+        width: 200px;
+    }
+    100% {
+        width: 500px;
+    }
 }
 
 .parrafo-ubicacion {
@@ -356,6 +422,23 @@ fieldset {
     grid-template-columns: repeat(3, 1fr);
     width: 90%;
     margin: 50px;
+    animation: padre-opiniones alternate infinite 2s 2s ease;
+}
+@keyframes padre-opiniones {
+    0% {
+        opacity: 100%;
+        color: red;
+    }
+    25% {
+        opacity: 75%;
+    }
+    50% {
+        opacity: 50%;
+        color: red;
+    }
+    75% {
+        opacity: 25%;
+    }
 }
 
 .img-opiniones {
@@ -372,6 +455,25 @@ fieldset {
 .input-opiniones {
     margin-left: 45px;
     height: 70px;
+    animation: input-opiniones infinite ease 3s 2s;
+}
+
+@keyframes input-opiniones {
+    0% {
+        background: linear-gradient(to right, red, rgb(189, 99, 99));
+    }
+    25% {
+        background: linear-gradient(to left, red, rgb(219, 64, 64));
+    }
+    50% {
+        background: linear-gradient(to top, red, rgb(219, 64, 64));
+    }
+    75% {
+        background: linear-gradient(to bottom, red, rgb(219, 64, 64));
+    }
+    100% {
+        background: linear-gradient(red, rgb(219, 64, 64))
+    }
 }
 
 .segundo-titulo2 {
