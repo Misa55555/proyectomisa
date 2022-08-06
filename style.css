@@ -53,7 +53,6 @@
     width: 300px;
 }
 
- ----------------------------
 
             /*   MAIN  "INFORMACION"*/
 
@@ -107,26 +106,24 @@
     padding: 16px;
 }
 
-@media all and (max-width: 900px) and (min-width:764px){          /* media: tablet */
-   .inframe-text {
-    color: black;
-    display: grid;
-    grid-template-rows: repeat(2, 1fr) ;
-   }
+.card-33 {
+
+}
+
+@media all and (max-width: 1250px) and (min-width:764px){          /* media: tablet */
    .padre-main {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
     background-color: blue;
     }
-    .texto-informacion {
-        width: 100%;
-        padding: 16px;
-    }
-    .inframe {
-        padding: 16px;
-        width: 500px;
-    }
+    .card-33 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 30px;
+     }
+     .p-index {
+        color: wheat;
+     }
 }
 
 @media all and (max-width: 765px){          /* media: mobile */
@@ -136,9 +133,6 @@
      grid-template-rows: repeat(2, 1fr) ;
     }
     .padre-main {
-     display: grid;
-     grid-template-columns: 1fr;
-     grid-template-rows: 1fr;
      background-color: blue;
      }
      .texto-informacion {
@@ -149,275 +143,77 @@
          padding: 1px;
          width: 380px;
      }
-  
+     .card-33 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 30px;
+     }
+     .p-index {
+        color: wheat;
+     }
  }
 
 
 /*   MAIN  "PERSONAS"*/
-
-
-
-.padre-personas {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    width: 90%;
-    margin: 50px;
+.footer-personas {      
+  margin-top: 250px;
 }
 
-.img-personas1 {
-    width: 300px;
-    margin: 1px auto;
-    animation: img-personas alternate infinite 2s 2s ease;
+.card-personas {
+    border: none;
 }
 
-.img-personas1:hover {
-    width: 350px;
-    border-radius: 50%;
-    border: red 3px solid;
+.padre-padre-personas {
+    margin-top: 70px;
 }
 
-@keyframes img-personas {
-    0% {
-        transform: rotate(360deg);
-    }
-    50% {
-     border-color: yellow;   
-    }
-    75% {
-     border-color: orangered;
-    }
+.h2-personas {
+    text-align: center;
+    font-size: 55px;
+    color: #333;
+    border-bottom: solid 3px blue;
 }
 
-.stronge-personas {
-    display: flex;
-    justify-content: center;
-    animation: stronge-personas alternate ease-in-out infinite 2s 2s;
+.color-red-personas {
+    color: red;
 }
-
-@keyframes stronge-personas {
-    0% {
-        transform: translate(0%);
-        color: red
-    }
-    25% {
-        transform: translate(20%);
-        color: red
-    }
-    50% {
-        transform: translate(20%, 20%);
-        color: red
-    }
-    75% {
-        transform: translate(0%, 20%);
-        color: red
-    }
-}
-
-.footer-personas {
-    margin-top: 150px;
-}
-@media screen and (max-width: 900px) and (min-width:764px) {
-    .padre-personas {
-        display: flex;
-        flex-flow: row wrap;
-        width: 90%;
-        margin: 50px;
-    }
-    .img-personas1 {
-        border: red 3px solid;
-        border-radius: 50%;
-    }
-    .img-personas1:hover {
-        width: 310px;
-        border-radius: 50%;
-        border: red 3px solid;
-    }
-    strong {
-        display: none;
-    }
-    .footer-personas {
-        margin-top: 250px;
-    }
-}
-
-@media screen and (max-width: 765px) {
-    .padre-personas {
-        display: flex;
-        flex-flow: row wrap;
-        width: 90%;
-        margin: 50px;
-    }
-    .img-personas1 {
-        width: 210px;
-        border-radius: 70%;
-        border: red 3px solid;
-    }
-    .img-personas1:hover {
-        width: 210px;
-        border-radius: 70%;
-        border: red 3px solid;
-    }
-    strong {
-        display: none;
-    }
-}
-
 
         /*   MAIN  "DONACIONES"*/
 .body-donaciones {
     background: linear-gradient(to top,green, lightgreen);
 }
 
-.form-padre {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    text-align: center;
-    background: radial-gradient(green, lightgreen);
-    margin-top: 100px;
+.boton-donar {
+    margin-top: 50px;
+    margin-left: 50%;
+    
 }
 
-input{
-    background-color: #1133;
+.checkout {
+    font-size: 30px;
+    margin-top: 50px;
+    margin-left: 40%;
 }
-
-fieldset {
-    grid-column: 2/3;
-}
-
-.nacimiento {
-    display: flex;
-    margin: 4px;
-    font-weight: 1000;
-    line-height: 1;
-    justify-content: center;
-    margin-right: 27px;
-}
-
-
 
 .footer-donacion {
-    margin-top:220px ;
-}
-
-@media screen and (max-width: 900px) and (min-width: 764px) {
-    .form-padre {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        text-align: center;
-        background-color: rgb(53, 92, 165);
-        margin-top: 100px;
-    }
-    .footer-donacion {
-        margin-top: 479px;
-    }
-}
-
-@media screen and (max-width:765px) {
-    .form-padre {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        text-align: center;
-        background-color: cornflowerblue;
-        margin-top: 100px;
-    }
-    .footer-donacion {
-        margin-top: 310px;
-    }
+    margin-top: 80px;
 }
 
             /*   MAIN  "UBICACION"*/
 
-.cont {
-    display: grid;
-    grid-template-columns: 0.5fr 0.5fr 0.5fr;
-    background-color: black;
-}
-
-.img-ubi {
-    grid-column: 2/3;
-    align-self: center;
-    margin: 10px;
-    animation: img-ubi alternate 3s 1s ease;
-    animation-iteration-count: 1;
-}
-
-@keyframes img-ubi {
-    0% {
-        width: 200px;
-    }
-    100% {
-        width: 500px;
-    }
-}
-
-.parrafo-ubicacion {
-    color: aliceblue;
-    font-size: 18px;
-    line-height: 1.1;
-}
-
-.body-ubi {
-    background-color: black;
+.img-ubi-main {
+    width: 500px;
 }
 
 .footer-ubicacion {
-    margin-top: 158px;
+    margin-top: 146px;
 }
 
-@media screen and (max-width: 900px) and (min-width: 764px) {
-    .cont {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-    }
-    .parrafo-ubicacion {
-        color: aliceblue;
-        font-size: 16px;
-        line-height: 1;
-        border: 1px solid wheat;
-    }
-    .img-ubi {
-        grid-row: 1/3;
-        align-self: center;
-        margin: 10px;
-    }
-    .footer-ubicacion {
-        margin-top: 72px;
-    }
+.container-ubi {
+    margin-top: 100px;
 }
-
-@media screen and (max-width: 765px) {
-    .cont {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 0.7fr 1fr 0.7fr;
-    }
-    .parrafo-ubicacion {
-        color: aliceblue;
-        font-size: 12px;
-        padding: 3px;
-    }
-    .img-ubi {
-        grid-column: 1/4;
-        align-self: center;
-        width: 300px;
-    }
-
-    .parr1 {
-        grid-column: 1/3;
-        align-self: center;
-        width: 90%;
-    }
-    .parr2 {
-        grid-column: 1/3;
-        width: 90%;
-    }
-    .footer-ubicacion {
-        margin-top: 155px;
-    }
-}
-
-
 
         /*   MAIN  "Opiniones"*/
 

@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/png" sizes="32x32" href="../Icon/favicon-32x32.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="../style.css">
     <title>Personas 🙋‍♂️🙋‍♀️</title>
 </head>
@@ -12,25 +13,58 @@
   <header class="padre-header">
     <h1 class="titulo">Nombre Pagina</h1>
     <nav>
-      <ul class="menu">
-        <li><a href="../index.html">Informacion</a></li>
-        <li><a href="./personas.html">Personas</a></li>
-        <li><a href="./donaciones.html">Donaciones</a></li>
-        <li><a href="./ubicacion.html">Ubicaciones</a></li>
-        <li><a href="./opiniones.html">Opiniones</a></li>
+      <ul class="nav justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="../index.html">Informacion</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./personas.html">Personas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./donaciones.html">Donaciones</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./ubicacion.html">Ubicacion</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./opiniones.html">Opinion</a>
+        </li>
       </ul>
     </nav>
   </header>
-     <hr>
     <main class="main-personas">
-        <section class="padre-personas"> <!--Img de personas-->
-            <img src="../img/vector-principal-de-la-persona-de-la-cara-del-perfil-de-la-silueta-del-ejemplo-89116264.jpg" alt="persona" class="img-personas1 per1"> 
-            <img src="../img/vector-principal-de-la-persona-de-la-cara-del-perfil-de-la-silueta-del-ejemplo-89116264.jpg" alt="persona" class="img-personas1 per2"> 
-            <img src="../img/vector-principal-de-la-persona-de-la-cara-del-perfil-de-la-silueta-del-ejemplo-89116264.jpg" alt="persona" class="img-personas1 per3"> 
-            <strong class="stronge-personas">no disponible</strong>
-            <strong class="stronge-personas">no disponible</strong>
-            <strong class="stronge-personas">no disponible</strong>  
-        </section>
+      <div class="padre-h2-personas">
+          <h2 class="h2-personas mx-auto">Personas</h2>
+      </div>
+      <div class="card-group padre-padre-personas">
+        <div class="card m-3 card-personas">
+          <img src="../img/vector-principal-de-la-persona-de-la-cara-del-perfil-de-la-silueta-del-ejemplo-89116264.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title color-red-personas">Persona 1</h5>
+            <p class="card-text color-red-personas">Lamentamos informarle que no hay personas disponibles.</p>
+            <a tabindex="0" class="btn btn-lg btn-danger" role="button" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-title="Dismissible popover" data-bs-content="And here's some amazing content. It's very engaging. Right?">Reportar Error</a>
+            <p class="card-text"><small class="text-muted">Last update 3 months ago</small></p>
+          </div>
+        </div>
+        <div class="card m-3 card-personas">
+          <img src="../img/vector-principal-de-la-persona-de-la-cara-del-perfil-de-la-silueta-del-ejemplo-89116264.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title color-red-personas">Persona 2</h5>
+            <p class="card-text color-red-personas">Lamentamos informarle que no hay personas disponibles.</p>
+            <a tabindex="0" class="btn btn-lg btn-danger" role="button" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-title="Dismissible popover" data-bs-content="And here's some amazing content. It's very engaging. Right?">Reportar Error</a>
+            <p class="card-text"><small class="text-muted">Last update 3 months ago</small></p>
+          </div>
+        </div>
+        <div class="card m-3 card-personas">
+          <img src="../img/vector-principal-de-la-persona-de-la-cara-del-perfil-de-la-silueta-del-ejemplo-89116264.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title color-red-personas">Persona 3</h5>
+            <p class="card-text color-red-personas">Lamentamos informarle que no hay personas disponibles.</p>
+            <a tabindex="0" class="btn btn-lg btn-danger" role="button" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-title="Dismissible popover" data-bs-content="And here's some amazing content. It's very engaging. Right?">Reportar Error</a>
+            <p class="card-text"><small class="text-muted">Last update 3 months ago</small></p>
+          </div>
+        </div>
+      </div>
     </main>
     <footer class="footer-personas">
         <div class="img-footer a">
